@@ -53,7 +53,7 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
-        if self.top == self.size-1
+        if self.top == self.size-1:
             return True
         else:
             return False
@@ -65,7 +65,7 @@ class Solution:
           True if it is full, else returns False.
         """
         # Write your code here
-        if self.rear == self.size-1
+        if self.rear == self.size-1:
             return True
         else:
             return False
@@ -103,6 +103,7 @@ class Solution:
         if not self.is_stack_empty():
             chara = self.stack[self.top]    
             self.stack.pop()
+            self.top -= 1
             return char
 
     def dequeue_character(self):
@@ -142,7 +143,7 @@ compare both characters
 If the comparison fails, set is_palindrome as False.
 '''
 # Write the necessary logic
-for index in range(length_of_text)
+for index in range(length_of_text):
     c1 = pop_character()
     c2 = dequeue_charcter()
     if c1 == c2:

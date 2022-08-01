@@ -130,10 +130,10 @@ length_of_text = len(text)
 solution = Solution(length_of_text)
 
 # push/enqueue all the characters of string text to stack
-for char in range(text):
+for char in text:
     # Write code here
-    push_character(char)
-    enqueue_character(char)
+    solution.push_character(char)
+    solution.enqueue_character(char)
 
 is_palindrome = True
 '''
@@ -144,8 +144,8 @@ If the comparison fails, set is_palindrome as False.
 '''
 # Write the necessary logic
 for index in range(length_of_text):
-    c1 = pop_character()
-    c2 = dequeue_charcter()
+    c1 = solution.pop_character()
+    c2 = solution.dequeue_charcter()
     if c1 == c2:
         is_pallindrome = True
     else:

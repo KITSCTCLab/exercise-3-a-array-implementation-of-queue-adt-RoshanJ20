@@ -101,8 +101,7 @@ class Solution:
         # Write your code here
        
         if not self.is_stack_empty():
-            chara = self.stack[self.top]    
-            self.stack.pop()
+            chara = self.stack.pop()
             self.top -= 1
             return char
 

@@ -145,7 +145,7 @@ If the comparison fails, set is_palindrome as False.
 # Write the necessary logic
 for index in range(length_of_text):
     c1 = solution.pop_character()
-    c2 = solution.dequeue_charcter()
+    c2 = solution.dequeue_character()
     if c1 == c2:
         is_pallindrome = True
     else:
